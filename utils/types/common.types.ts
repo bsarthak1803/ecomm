@@ -1,0 +1,19 @@
+import { Ref } from "react"
+
+export interface ProductListingViewProps {
+  products : Array<Product>,
+  fetchData: Function
+}
+
+export interface Product {
+    id : number,
+    title : string,
+    price : number,
+    description : string,
+    category : string,
+    image : string,
+    rating : {
+      rate : number,
+      count : number
+    }
+  }

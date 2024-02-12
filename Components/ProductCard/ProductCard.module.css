@@ -1,0 +1,31 @@
+.productCard {
+    display : flex;
+    flex-direction: column;
+    row-gap: 10px;
+    border: 2px solid grey;
+    border-radius: 15px;
+    box-shadow: 1px 2px 15px 2px #808077;
+    cursor: pointer;
+    background-color: white;
+}
+
+.verticalDivision{
+    border-width: 1px 0px 0px 0px;
+    border-color: grey;
+    border-style: dotted;
+}
+
+.productCard img {
+    display: block;
+    /* img is inline level element so to center it we need to change it to display block */
+    margin: 0 auto;
+    width: 60%;
+    height: 60%
+}
+
+@media screen and (min-width : 768px) {
+    .productCard img {
+        width: 75%;
+        height: 75%
+    }
+}

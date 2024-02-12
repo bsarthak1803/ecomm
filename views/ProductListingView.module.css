@@ -1,0 +1,14 @@
+.productListing {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    margin-top : 5%;
+    margin-left: 2%;
+    margin-right: 2%
+}
+
+@media screen and (min-width : 768px){
+    .productListing {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}

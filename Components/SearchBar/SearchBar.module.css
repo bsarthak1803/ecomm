@@ -1,0 +1,53 @@
+.searchBar {
+    /*horizontal center align search bar*/
+    margin: 0 auto;
+    width: 80%;
+    height: 2rem;
+}
+
+.searchBar input[type="text"] {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    padding: 2%;
+    margin-top: 1rem;
+    border-radius: 1rem;
+}
+
+.searchIcon{
+    position: absolute;
+    background-color: white;
+    border: 1px solid #fff;
+    width: 8%;
+    top: 19px;
+    right: 9%;
+    cursor: pointer;
+
+}
+
+@media screen and (min-width : 768px){
+    .searchBar input[type="text"] {
+        padding: 1%
+    }
+    .searchIcon {
+        width: 4%;
+        right: 9%
+    }
+}
+
+
+/* responsive screens styling */
+@media screen and (min-width : 1200px) {
+    .searchBar {
+        width: 50%
+    }
+
+    .searchBar input[type="text"] {
+        padding: 1%;
+    }
+
+    .searchIcon {
+        width: 2%;
+        right: 25%
+    }
+}

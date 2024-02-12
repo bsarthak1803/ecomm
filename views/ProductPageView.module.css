@@ -1,0 +1,54 @@
+.mainCard {
+    display: grid;
+    margin: 0 auto;
+    margin-top: 10%;
+    background-color: white;
+    border-radius: 20px 20px;
+}
+
+.cartBtnSection {
+    text-align: center; /* align internal content to center */
+}
+
+.cartBtn {
+    border-radius: 20px;
+    border: 1px solid grey;
+    padding: 20px 25px;
+    margin-top: 5%;
+    background-color: forestgreen;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.cartBtn:hover {
+    background-color: darkgreen;
+}
+
+.imgSection {
+    display: flex;
+    justify-content: center;
+    /* aligns items center */
+}
+
+.productDescription {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+
+@media screen and (max-width : 768px) {
+    .mainCard {
+        grid-template-rows: 3fr 3fr;
+        margin-top: 25%;
+    }
+}
+
+@media screen and (min-width : 768px) {
+    .mainCard {
+        grid-template-columns: 3fr 3fr;
+        max-width: 70%;
+        margin-top: 10%;
+    }
+}
