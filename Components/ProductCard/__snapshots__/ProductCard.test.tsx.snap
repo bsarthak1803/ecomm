@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Product Card Component renders product card component correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="productCard"
+    id="2"
+  >
+    <img
+      alt="Mens Casual Premium Slim Fit T-Shirts "
+      data-nimg="1"
+      decoding="async"
+      height="200"
+      id="2"
+      loading="eager"
+      src="/_next/image?url=https%3A%2F%2Ffakestoreapi.com%2Fimg%2F71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg&w=640&q=75"
+      srcset="/_next/image?url=https%3A%2F%2Ffakestoreapi.com%2Fimg%2F71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg&w=256&q=75 1x, /_next/image?url=https%3A%2F%2Ffakestoreapi.com%2Fimg%2F71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg&w=640&q=75 2x"
+      style="color: transparent;"
+      width="200"
+    />
+    <div
+      class="verticalDivision"
+    />
+    <section>
+      <center
+        id="2"
+      >
+        <b>
+          Title : 
+        </b>
+        Mens Casual Premium Slim Fit T-Shirts 
+      </center>
+    </section>
+    <section>
+      <center
+        id="2"
+      >
+        <b>
+          Price : 
+        </b>
+        INR 22.3
+      </center>
+    </section>
+    <section>
+      <center
+        id="2"
+      >
+        <b>
+          Rating : 
+        </b>
+        4.1
+      </center>
+    </section>
+  </div>
+</DocumentFragment>
+`;
