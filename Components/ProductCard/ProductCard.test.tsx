@@ -2,8 +2,7 @@ import "@testing-library/jest-dom"; // Import the matchers
 
 import { render, screen } from "@testing-library/react";
 import { ProductCard } from "./ProductCard";
-import { mockProductData } from "./mockData";
-import { DOMElement } from "react";
+import { mockProductData } from "../../__mocks__/mockData";
 
 describe("Product Card Component", () => {
   let fragment: () => {}; // fragment of type arrow
