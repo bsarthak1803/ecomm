@@ -1,6 +1,6 @@
 import React, {useRef, useEffect, useCallback} from "react";
 import { Product, ProductListingViewProps } from "../utils/types/common.types";
-import { ProductCard } from "@/Components/ProductCard/ProductCard";
+import { ProductCard } from "../Components/ProductCard/ProductCard";
 import styles from "./ProductListingView.module.css";
 import {Pagination} from '../Components/Pagination/Pagination';
 import {useRouter} from 'next/router'
