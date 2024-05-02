@@ -5,23 +5,22 @@ import { memo } from "react";
 
 //types interface for Product Card Props
 interface ProductCardProps {
-  key: number;
   product: Product;
 }
 
 export const ProductCard: React.FC<ProductCardProps> = memo(
   ({ product }): React.ReactElement => {
     return (
-      <div className={styles.productCard} id={product?.id.toString()}>
+      <main className={styles.productCard} id={product?.id.toString()}>
         <Image
-          src={product?.image}
+          src={product?.thumbnail}
           alt={product?.title}
           width={200}
           height={200}
           loading={product.id <= 8 ? "eager" : "lazy"}
           id={product?.id.toString()}
         />
-        <div className={styles.verticalDivision}></div>
+        <section className={styles.verticalDivision}></section>
         <section>
           <center id={product?.id.toString()}>
             <b>Title : </b>
@@ -36,10 +35,10 @@ export const ProductCard: React.FC<ProductCardProps> = memo(
         <section>
           <center id={product?.id.toString()}>
             <b>Rating : </b>
-            {product?.rating?.rate}
+            {product?.rating}
           </center>
         </section>
-      </div>
+      </main>
     );
   }
 );

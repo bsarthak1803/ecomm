@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
-import { ProductPageView } from "../views/ProductPageView";
+import { ProductPageView } from "../src/views/ProductPageView";
 import { memo, useMemo } from "react";
-import { Product } from '../utils/types/common.types'
+import { Product } from '../src/utils/types/common.types'
 
 // type ProductPageProps = { 
 //   productData : Product

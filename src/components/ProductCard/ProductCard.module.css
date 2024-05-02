@@ -1,5 +1,5 @@
 .productCard {
-    display : flex;
+    display: flex;
     flex-direction: column;
     row-gap: 10px;
     border: 2px solid grey;
@@ -9,7 +9,7 @@
     background-color: white;
 }
 
-.verticalDivision{
+.verticalDivision {
     border-width: 1px 0px 0px 0px;
     border-color: grey;
     border-style: dotted;
@@ -19,13 +19,13 @@
     display: block;
     /* img is inline level element so to center it we need to change it to display block */
     margin: 0 auto;
-    width: 60%;
-    height: 60%
+    /* width: 60%;
+    height: 60% */
 }
 
 @media screen and (min-width : 768px) {
-    .productCard img {
+    /* .productCard img {
         width: 75%;
         height: 75%
-    }
+    } */
 }

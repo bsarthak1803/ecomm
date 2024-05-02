@@ -1,12 +1,12 @@
 import "@testing-library/jest-dom"; // Import the matchersimport
 
-import MockIntersectionObserver from "../__mocks__/MockIntersectionObserver";
+import MockIntersectionObserver from "../../__mocks__/MockIntersectionObserver";
 
 import { cleanup, render, screen, fireEvent } from "@testing-library/react";
 
 import { ProductListingView } from "./ProductListingView";
 
-import { mockProductData } from "../__mocks__/products";
+import { mockProductData } from "../../__mocks__/products";
 
 import { useRouter } from "next/router";
 

@@ -2,7 +2,10 @@ import { Ref } from "react"
 
 export interface ProductListingViewProps {
   products : Array<Product>,
-  fetchData: Function
+  fetchData: Function,
+  setProductsList: Function,
+  hasNextPage: boolean,
+  isLoading: boolean
 }
 
 export interface Product {
@@ -11,9 +14,11 @@ export interface Product {
     price : number,
     description : string,
     category : string,
-    image : string,
-    rating : {
-      rate : number,
-      count : number
-    }
+    thumbnail : string,
+    rating : number,
+    discountPercentage: number,
+    stock: number,
+    brand: string,
+    images: any[]
+
   }
