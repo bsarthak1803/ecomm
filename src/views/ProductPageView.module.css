@@ -38,17 +38,20 @@
     justify-content: center;
 }
 
-@media screen and (max-width : 768px) {
+@media only screen and (max-width : 768px) {
     .mainCard {
-        grid-template-rows: 3fr 3fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 1rem;
         margin-top: 25%;
     }
 }
 
-@media screen and (min-width : 768px) {
+@media only screen and (min-width : 768px) {
     .mainCard {
-        grid-template-columns: 3fr 3fr;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
         max-width: 70%;
+        height: 25rem;
         margin-top: 10%;
     }
 }

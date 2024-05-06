@@ -1,0 +1,46 @@
+.carousel {
+    position: relative;
+    height: 100%;
+    max-width: 100%
+}
+
+
+.leftArrow {
+    all: unset;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    border: solid black;
+    border-width: 3px 0px 0px 3px;
+    transform: rotate(-45deg);
+    padding: 1rem;
+    height: 5px;
+    width: 5px;
+    left: 1rem;
+}
+
+.rightArrow {
+    all: unset;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    border: solid black;
+    border-width: 3px 3px 0px 0px;
+    transform: rotate(45deg);
+    padding: 1rem;
+    height: 5px;
+    width: 5px;
+    right: 1rem;
+}
+
+.leftArrow:focus {
+    border: solid blue;
+    border-width: 3px 0px 0px 3px;
+    transform: rotate(-45deg);
+}
+
+.rightArrow:focus {
+    border: solid blue;
+    border-width: 3px 3px 0px 0px;
+    transform: rotate(45deg);
+}

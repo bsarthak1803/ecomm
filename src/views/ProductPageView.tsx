@@ -1,7 +1,7 @@
 import { useEffect, useState, memo } from "react";
 import styles from "./ProductPageView.module.css";
-import Image from "next/image";
 import { Product } from "../utils/types/common.types";
+import Carousel from "../components/Carousel/Carousel";
 
 interface ProductPageViewProps {
   productID: number;
@@ -36,14 +36,7 @@ export const ProductPageView: React.FC<ProductPageViewProps> = memo(
     return (
       <>
         <main className={styles.mainCard}>
-          <section className={styles.imgSection}>
-            <Image
-              src={productDetails?.thumbnail}
-              alt={productDetails?.description}
-              width={300}
-              height={300}
-            ></Image>
-          </section>
+          <Carousel images={productDetails.images} />
           <section className={styles.productDescription}>
             <section>
               <center>
