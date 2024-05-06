@@ -1,25 +1,24 @@
 import { useRouter } from "next/router";
 import { ProductPageView } from "../src/views/ProductPageView";
-import { memo, useMemo } from "react";
-import { Product } from '../src/utils/types/common.types'
+import { memo, useEffect, useMemo, useState } from "react";
+import { Product } from "../src/utils/types/common.types";
 
-// type ProductPageProps = { 
+// type ProductPageProps = {
 //   productData : Product
 // }
 
 const ProductPage = memo(() => {
   const router = useRouter();
   const params = router?.query;
-  const productID = Number(params?.products?.[1]);
-  // memoize productID
-  useMemo(() => Number(params?.products?.[1]), [params]);
+  let productID;
+  productID = useMemo(() => Number(params?.products?.[1]), [params]); //memoize the productID
+  if (!productID) return null;
   return (
     <>
       <ProductPageView productID={productID} />
     </>
   );
 });
-
 
 //using getStaticProps async function to generate all the pages at build time
 // export const getStaticProps = async(nextReq : any, nextRes : any) => {
